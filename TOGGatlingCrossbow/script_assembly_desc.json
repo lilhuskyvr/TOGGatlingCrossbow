@@ -1,0 +1,7 @@
+﻿{
+  "Mod_Name": "TOGGatlingCrossbow",
+  "Author": "lilhusky",
+  "dllName": "TOGGatlingCrossbow",
+  "className": "TOGGatlingCrossbowPatch",
+  "startMethod": "Inject"
+}
