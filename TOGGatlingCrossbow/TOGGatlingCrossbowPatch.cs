@@ -1,8 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using Newtonsoft.Json;
 using TOGModFramework;
 using UnityEngine;
+using Valve.Newtonsoft.Json;
+
+// ReSharper disable InconsistentNaming
 
 namespace TOGGatlingCrossbow
 {
@@ -10,7 +11,7 @@ namespace TOGGatlingCrossbow
     {
         public string modName = "TOGGatlingCrossbow";
         public bool isSemiAuto;
-        private bool isCrossbowBeingReloaded;
+        private bool _isCrossbowBeingReloaded;
 
         public void Inject()
         {
@@ -23,7 +24,7 @@ namespace TOGGatlingCrossbow
 
         public IEnumerator ReloadCrossbow(CrossBowScript crossBowScript)
         {
-            isCrossbowBeingReloaded = true;
+            _isCrossbowBeingReloaded = true;
             var currentHandController = crossBowScript.wp.isHeldRight
                 ? Player.local.controlInput.RightController
                 : Player.local.controlInput.LeftController;
@@ -46,14 +47,14 @@ namespace TOGGatlingCrossbow
                     new Vector3(0.0f, crossBowScript.BowString.localPosition.y, 0.008f);
             }
 
-            isCrossbowBeingReloaded = false;
+            _isCrossbowBeingReloaded = false;
 
             yield return null;
         }
 
         private void EventManagerOnonCrossbowBoltFired(CrossBowScript crossBowScript)
         {
-            if (!isCrossbowBeingReloaded)
+            if (!_isCrossbowBeingReloaded)
                 ConfigManager.local.StartCoroutine(ReloadCrossbow(crossBowScript));
         }
     }
