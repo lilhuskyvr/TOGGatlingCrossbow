@@ -39,18 +39,25 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
     <Reference Include="TOGModFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGModFramework\TOGModFramework.dll</HintPath>
+      <HintPath>D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\!TOGModFramework\TOGModFramework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="Valve.Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\Managed\Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="TOGGatlingCrossbowPatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="script_assembly_desc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Settings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
