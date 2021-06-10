@@ -4,3 +4,4 @@ D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\
 C:\Users\nikon\RiderProjects\TOGGatlingCrossbow\TOGGatlingCrossbow\obj\Release\TOGGatlingCrossbow.csprojResolveAssemblyReference.cache
 C:\Users\nikon\RiderProjects\TOGGatlingCrossbow\TOGGatlingCrossbow\obj\Release\TOGGatlingCrossbow.dll
 C:\Users\nikon\RiderProjects\TOGGatlingCrossbow\TOGGatlingCrossbow\obj\Release\TOGGatlingCrossbow.pdb
+D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGGatlingCrossbow\Settings.json
